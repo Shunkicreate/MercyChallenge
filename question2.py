@@ -12,8 +12,9 @@ for i in range(n):
     continue
   esc = num
   num = pre_1 + num
-  print(num, pre_1)
   pre_1 = esc
+  
+  print(num)
   sum += num
 
 print(num)
