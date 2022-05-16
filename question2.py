@@ -6,14 +6,12 @@ pre_1 = 0
 num = 1
 sum = 0
 n = 15
-for i in range(n):
-  if(i == 0):
-    sum += num
-    continue
+
+sum += num #一回目の足し算
+for i in range(1, n):
   esc = num
   num = pre_1 + num
   pre_1 = esc
-  
   print(num)
   sum += num
 
